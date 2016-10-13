@@ -18,10 +18,10 @@ export function loadingBarReducer(state = 0, action = {}) {
 
   switch (action.type) {
     case SHOW:
-      newState = state + 1
+      newState = 1
       break
     case HIDE:
-      newState = state > 0 ? state - 1 : 0
+      newState = 0
       break
     default:
       return state

@@ -24,7 +24,7 @@ describe('loadingBarReducer', () => {
 
     expect(
       loadingBarReducer(1, { type: SHOW })
-    ).toEqual(2)
+    ).toEqual(1)
   })
 
   it('handles HIDE', () => {
