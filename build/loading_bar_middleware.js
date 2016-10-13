@@ -13,7 +13,7 @@ var _loading_bar_ducks = require('./loading_bar_ducks');
 var defaultTypeSuffixes = ['PENDING', 'FULFILLED', 'REJECTED'];
 
 function loadingBarMiddleware() {
-  var config = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+  var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
   var promiseTypeSuffixes = config.promiseTypeSuffixes || defaultTypeSuffixes;
 

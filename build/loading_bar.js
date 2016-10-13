@@ -40,7 +40,7 @@ var LoadingBar = exports.LoadingBar = function (_React$Component) {
   function LoadingBar(props) {
     _classCallCheck(this, LoadingBar);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LoadingBar).call(this, props));
+    var _this = _possibleConstructorReturn(this, (LoadingBar.__proto__ || Object.getPrototypeOf(LoadingBar)).call(this, props));
 
     _this.state = initialState;
 

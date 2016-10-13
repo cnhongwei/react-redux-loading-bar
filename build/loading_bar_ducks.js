@@ -22,17 +22,17 @@ function hideLoading() {
 }
 
 function loadingBarReducer() {
-  var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
-  var action = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   var newState = void 0;
 
   switch (action.type) {
     case SHOW:
-      newState = state + 1;
+      newState = 1;
       break;
     case HIDE:
-      newState = state > 0 ? state - 1 : 0;
+      newState = 0;
       break;
     default:
       return state;
